@@ -19,8 +19,6 @@ def create_streamlit_app(llm, portfolio, clean_text):
 
     if submit_button:
         try:
-            # loader = WebBaseLoader([url_input])
-            # data = clean_text(loader.load().pop().page_content)
             headers = {
                 "User-Agent": "Mozilla/5.0 (compatible; ColdMailBot/1.0)"
                 }
