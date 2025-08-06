@@ -23,7 +23,7 @@ def create_streamlit_app(llm, portfolio, clean_text):
                 "User-Agent": "Mozilla/5.0 (compatible; ColdMailBot/1.0)"
                 }
             response = requests.get(url_input, headers=headers)
-            response.raise_for_status()  # will raise an HTTPError if request fails
+            response.raise_for_status()  # will raise an HTTPError if the request fails
             text = response.text
             document = Document(page_content=text)
             data = clean_text(document.page_content)
